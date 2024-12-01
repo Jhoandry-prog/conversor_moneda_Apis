@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Monedas Apis</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="./assets/css/estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Convertir moneda</h1>
+    <div class="conversion-form">
+      <input type="number" id="amount" placeholder="Ingresa la cantidad" />
+      
+      <select id="fromCurrency">
+        <option value="dolar">USD (Dólar)</option>
+        <option value="euro">EUR (Euro)</option>
+        <option value="peso_colombiano">COP (Peso Colombiano)</option>
+        <option value="peso_chileno">CLP (Peso Chileno)</option>
+      </select>
+      
+      <!-- Selección de moneda de destino -->
+      <select id="toCurrency">
+        <option value="dolar">USD (Dólar)</option>
+        <option value="euro">EUR (Euro)</option>
+        <option value="peso_colombiano">COP (Peso Colombiano)</option>
+        <option value="peso_chileno">CLP (Peso Chileno)</option>
+      </select>
+      
+      <!-- Botón para convertir -->
+      <button id="convert">Convertir</button>
+    </div>
+    
+    <!-- Resultado de la conversión -->
+    <p id="result">El resultado de la conversión aparecerá aquí.</p>
+    
+    <div class="chart-container">
+      <canvas id="historyChart" width="800" height="400"></canvas>
+    </div>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
